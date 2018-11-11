@@ -2,6 +2,7 @@
   "name": "tic-tac-toe",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/tic-tac-toe",
   "dependencies": {
     "boardgame.io": "^0.26.3",
     "react": "^16.6.1",

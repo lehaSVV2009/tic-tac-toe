@@ -7,7 +7,6 @@ before_install:
 cache:
   yarn: true
 script:
-  - yarn
   - yarn build
 deploy:
   - provider: pages
