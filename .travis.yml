@@ -2,14 +2,17 @@ language: node_js
 node_js:
   - "10"
 before_install:
-  # Check if sub-folder changed
-  - CHANGED_CLIENT=$(git diff --name-only $TRAVIS_COMMIT_RANGE -- client/)
   # Install yarn
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.12.3
   - export PATH=$HOME/.yarn/bin:$PATH
 cache:
   yarn: true
 script:
+  # Build core
+  - cd core
+  - yarn
+  - yarn build
+  - cd..
   # Build client
   - cd client
   - yarn
@@ -21,5 +24,3 @@ deploy:
     local_dir: client/build
     github_token: $GITHUB_API_KEY
     skip_cleanup: true
-    on:
-      condition: $CHANGED_CLIENT

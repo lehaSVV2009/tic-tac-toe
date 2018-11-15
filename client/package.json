@@ -1,5 +1,5 @@
 {
-  "name": "tic-tac-toe",
+  "name": "tic-tac-toe-client",
   "version": "0.1.0",
   "private": true,
   "homepage": "/tic-tac-toe",
@@ -7,7 +7,8 @@
     "boardgame.io": "^0.26.3",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "tic-tac-toe-core": "file:../core"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,9 +1,9 @@
 import React from "react";
 import { Client } from "boardgame.io/react";
+import { Game } from "tic-tac-toe-core";
 
 import AI from "./AI";
 import Board from "./Board";
-import Game from "./Game";
 
 const TicTacToeSinglePlayer = Client({
   game: Game,

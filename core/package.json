@@ -1,0 +1,32 @@
+{
+  "name": "tic-tac-toe-core",
+  "version": "0.1.0",
+  "description": "Reusable tic-tac-toe functions",
+  "main": "build/index.js",
+  "files": [
+    "build/**/*.js",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "babel src -d build"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lehaSVV2009/tic-tac-toe.git"
+  },
+  "keywords": [
+    "tic-tac-toe",
+    "core"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  },
+  "peerDependencies": {
+    "boardgame.io": ">= 0.26.3"
+  }
+}
