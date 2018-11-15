@@ -12,7 +12,7 @@ script:
   - cd core
   - yarn
   - yarn build
-  - cd..
+  - cd ..
   # Build client
   - cd client
   - yarn
