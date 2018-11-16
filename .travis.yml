@@ -28,7 +28,7 @@ deploy:
   - provider: heroku
     app: server-tic-tac-toe
     api_key:
-      secure: $HEROKU_API_KEY
+      secure: NSNDn7pzypPbX6utGEJgegiFd0jlwgk+Q6nbpEfPvdr75nfXVogItN/O4AEDSh1OsbhCI8+ChN2fRfPtDB1qOCYSVjU66B5scJAfFLcKSbyxbAI7ky6BWuckPg2tjTtttiejEEkm8+xkWOUzLoCYSmSqkEDnuW3BmaQDunXwTrwh1DDRAuKzsFHG60VWJW39Kxxf148MSqYBHEGarddKUbdaOGxNH16X/zYEQzYYm3jWwaRzzu6uAoZbgfTCwWPKSHQCDduYrtTyAL8qM7WHghb5PGx4oz6mdd0jw7fr+mgyRz4u2cN1RmfnQsq1vEmkara65i9bn9vdjRiO68+mELbRgUof7CTNmUzYPyI1hgOQ3O6cE8pGFVzZqF+HqATC7z6nXSE2IX1VzpeKNdBU1SpFTwuMntau0g3i0/X4d2zvgLyFmqgyL0zS5i36xNHsuHPVXcuWJIjgPzT466xocJ+9fgXz5is6R40BrPm7Rzrsqf6M3Hi1vB7I5TD+j8A3y93XQlI4J17Z95hehwQseFKFy6ZcKb7acj1oEWJz1UR2+UBJzQ//EhEP0Qa6HSsZZNWD61A5Vqz4dJNVIxLfiWhS1aA0VLaIpkb3znqWI006TgTmngegU0dtV1x0VPSBYaFdP6KYNK8TUbYetadpHpYrsZqW3s3HQeqBxHk9Rx4=
     skip_cleanup: true
   # Deploy client to github pages
   - provider: pages
