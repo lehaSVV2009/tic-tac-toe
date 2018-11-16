@@ -1,11 +1,10 @@
 {
-  "name": "tic-tac-toe-core",
+  "name": "tic-tac-toe-server",
   "version": "0.1.0",
-  "description": "Reusable tic-tac-toe functions",
+  "description": "tic-tac-toe server with websockets for network multiplayer",
   "main": "build/index.js",
   "files": [
-    "build/**/*.js",
-    "README.md"
+    "build/**/*.js"
   ],
   "license": "MIT",
   "repository": {
@@ -14,17 +13,19 @@
   },
   "keywords": [
     "tic-tac-toe",
-    "core"
+    "server"
   ],
+  "dependencies": {
+    "boardgame.io": "^0.26.3",
+    "tic-tac-toe-core": "file:../core"
+  },
   "scripts": {
-    "build": "babel src -d build"
+    "build": "babel src -d build",
+    "start": "node build/index.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1"
-  },
-  "peerDependencies": {
-    "boardgame.io": ">= 0.26.3"
   }
 }
