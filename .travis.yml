@@ -24,6 +24,12 @@ script:
   - yarn build
   - cd ..
 deploy:
+  # Deploy server to heroku
+  - provider: heroku
+    app: server-tic-tac-toe
+    api_key:
+      secure: $HEROKU_API_KEY
+    skip_cleanup: true
   # Deploy client to github pages
   - provider: pages
     local_dir: client/build
