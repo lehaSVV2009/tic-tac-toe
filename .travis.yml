@@ -12,6 +12,6 @@ script:
 deploy:
   # Deploy client to github pages
   - provider: pages
-    local_dir: client/build
+    local_dir: build
     github_token: $GITHUB_API_KEY
     skip_cleanup: true
