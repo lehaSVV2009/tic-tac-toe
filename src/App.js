@@ -5,11 +5,11 @@ import { Game } from "tic-tac-toe-core";
 import AI from "./AI";
 import Board from "./Board";
 
-const TicTacToeSinglePlayer = Client({
-  game: Game,
-  board: Board,
-  ai: AI
-});
+// const TicTacToeSinglePlayer = Client({
+//   game: Game,
+//   board: Board,
+//   ai: AI
+// });
 
 // const TicTacToeMultiPlayerLocal = Client({
 //   game: TicTacToe,
@@ -17,28 +17,28 @@ const TicTacToeSinglePlayer = Client({
 //   multiplayer: { local: true }
 // });
 
-// const TicTacToeMultiPlayerRemote = Client({
-//   game: TicTacToe,
-//   board: Board,
-//   multiplayer: { server: "http://localhost:8000" }
-// });
+const TicTacToeMultiPlayerRemote = Client({
+  game: Game,
+  board: Board,
+  multiplayer: { server: process.env.REACT_APP_API_URL }
+});
 
 const App = () => (
   <div>
-    <div>
+    {/* <div>
       Single player
       <TicTacToeSinglePlayer />
-    </div>
+    </div> */}
     {/* <div>
       Multi player local
       <TicTacToeMultiPlayerLocal playerID="0" />
       <TicTacToeMultiPlayerLocal playerID="1" />
-    </div>
+    </div> */}
     <div>
       Multi player remote
       <TicTacToeMultiPlayerRemote playerID="0" />
       <TicTacToeMultiPlayerRemote playerID="1" />
-    </div> */}
+    </div>
   </div>
 );
 

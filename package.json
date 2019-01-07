@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "/tic-tac-toe-client",
   "dependencies": {
-    "boardgame.io": "^0.26.3",
+    "boardgame.io": "^0.29.2",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-scripts": "2.1.1",

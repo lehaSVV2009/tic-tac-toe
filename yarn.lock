@@ -1493,12 +1493,13 @@ bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
   version "4.11.8"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
 
-boardgame.io@^0.26.3:
-  version "0.26.3"
-  resolved "https://registry.yarnpkg.com/boardgame.io/-/boardgame.io-0.26.3.tgz#2ef058aea3878f7b87cf33dd9fdcc6d0211bc96e"
+boardgame.io@^0.29.2:
+  version "0.29.2"
+  resolved "https://registry.yarnpkg.com/boardgame.io/-/boardgame.io-0.29.2.tgz#be379a34905d53ed0c87b695666a6da6caea9d16"
   dependencies:
     "@koa/cors" "^2.2.1"
     flatted "^0.2.3"
+    immer "^1.8.0"
     koa "^2.5.2"
     koa-body "^2.5.0"
     koa-router "^7.2.1"
@@ -4094,6 +4095,10 @@ ignore@^4.0.6:
 immer@1.7.2:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/immer/-/immer-1.7.2.tgz#a51e9723c50b27e132f6566facbec1c85fc69547"
+
+immer@^1.8.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-1.10.0.tgz#bad67605ba9c810275d91e1c2a47d4582e98286d"
 
 import-cwd@^2.0.0:
   version "2.1.0"
@@ -8224,8 +8229,6 @@ thunky@^1.0.2:
 tic-tac-toe-core@lehaSVV2009/tic-tac-toe-core#master:
   version "0.1.0"
   resolved "https://codeload.github.com/lehaSVV2009/tic-tac-toe-core/tar.gz/011bc6bc32de9a5810854941d272bda1465a993a"
-  dependencies:
-    postinstall-build "^5.0.3"
 
 timers-browserify@^2.0.4:
   version "2.0.10"
