@@ -8928,9 +8928,9 @@ thunky@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/thunky/-/thunky-1.0.3.tgz#f5df732453407b09191dae73e2a8cc73f381a826"
 
-tic-tac-toe-core@lehaSVV2009/tic-tac-toe-core#master:
+tic-tac-toe-core@lehaSVV2009/tic-tac-toe-core#9276760c08323dc7ffa238575148243f1aa91e49:
   version "0.1.0"
-  resolved "https://codeload.github.com/lehaSVV2009/tic-tac-toe-core/tar.gz/2d60d6bab0b8912179f248d30aa36e829047228e"
+  resolved "https://codeload.github.com/lehaSVV2009/tic-tac-toe-core/tar.gz/9276760c08323dc7ffa238575148243f1aa91e49"
   dependencies:
     babel-cli "^6.26.0"
     babel-preset-es2015 "^6.24.1"

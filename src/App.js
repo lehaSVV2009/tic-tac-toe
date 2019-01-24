@@ -25,7 +25,7 @@ const TicTacToeMultiPlayerRemote = Client({
 
 class App extends React.Component {
   componentDidMount() {
-    this.createGame("default").finally(() => this.fetchGames());
+    this.createGame(Game.name).finally(() => this.fetchGames());
   }
 
   createGame = name => {

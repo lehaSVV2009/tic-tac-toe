@@ -9,7 +9,7 @@
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-scripts": "2.1.1",
-    "tic-tac-toe-core": "lehaSVV2009/tic-tac-toe-core#master"
+    "tic-tac-toe-core": "lehaSVV2009/tic-tac-toe-core#9276760c08323dc7ffa238575148243f1aa91e49"
   },
   "scripts": {
     "start": "react-scripts start",
