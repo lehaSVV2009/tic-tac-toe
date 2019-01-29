@@ -19,13 +19,13 @@ const App = () => (
       phase,
       playerName,
       runningGame,
-      onEnterLobby,
-      onExitLobby,
-      onCreateRoom,
-      onJoinRoom,
-      onLeaveRoom,
-      onExitRoom,
-      onStartGame
+      handleEnterLobby,
+      handleExitLobby,
+      handleCreateRoom,
+      handleJoinRoom,
+      handleLeaveRoom,
+      handleExitRoom,
+      handleStartGame
     }) => (
       <StyledLobby
         errorMsg={errorMsg}
@@ -34,13 +34,13 @@ const App = () => (
         phase={phase}
         playerName={playerName}
         runningGame={runningGame}
-        onEnterLobby={onEnterLobby}
-        onExitLobby={onExitLobby}
-        onCreateRoom={onCreateRoom}
-        onJoinRoom={onJoinRoom}
-        onLeaveRoom={onLeaveRoom}
-        onExitRoom={onExitRoom}
-        onStartGame={onStartGame}
+        onEnterLobby={handleEnterLobby}
+        onExitLobby={handleExitLobby}
+        onCreateRoom={handleCreateRoom}
+        onJoinRoom={handleJoinRoom}
+        onLeaveRoom={handleLeaveRoom}
+        onExitRoom={handleExitRoom}
+        onStartGame={handleStartGame}
       />
     )}
   />

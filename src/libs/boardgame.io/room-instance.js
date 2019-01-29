@@ -98,6 +98,7 @@ class LobbyRoomInstance extends React.Component {
           {inst.players.map(this._createSeat).join(", ")}
         </td>
         <td key={"cell-buttons-" + inst.gameID}>
+          {/* TODO show leave button even if game is ready to play */}
           {this._createInstanceButtons(inst)}
         </td>
       </tr>

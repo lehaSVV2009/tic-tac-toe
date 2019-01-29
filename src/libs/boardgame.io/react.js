@@ -21,7 +21,6 @@ export const PHASES = {
   LIST: "list"
 };
 
-// TODO rename gameInstances to rooms
 /**
  * Lobby
  *
@@ -39,6 +38,11 @@ export const PHASES = {
  *   A React component that provides a UI to create, list, join, leave, play or spectate game instances.
  */
 
+// TODO add option to long-polling like <Lobby polling={{ period: 5000 }} ... />
+// TODO add option to automatically remove room if all users leave the room
+// TODO add optional unique name check
+// TODO add optional limit for rooms (will disable 'create room' button if rooms number reached limit)
+// TODO rename gameInstances to rooms cause it's easier to understand
 class Lobby extends React.Component {
   static propTypes = {
     gameComponents: PropTypes.array.isRequired,
@@ -228,7 +232,6 @@ class Lobby extends React.Component {
   };
 
   render() {
-    // player info
     const { gameComponents, renderer } = this.props;
     const { errorMsg, playerName, phase, runningGame } = this.state;
 
@@ -240,13 +243,13 @@ class Lobby extends React.Component {
         phase,
         playerName,
         runningGame,
-        onEnterLobby: this._enterLobby,
-        onExitLobby: this._exitLobby,
-        onCreateRoom: this._createRoom,
-        onJoinRoom: this._joinRoom,
-        onLeaveRoom: this._leaveRoom,
-        onExitRoom: this._exitRoom,
-        onStartGame: this._startGame
+        handleEnterLobby: this._enterLobby,
+        handleExitLobby: this._exitLobby,
+        handleCreateRoom: this._createRoom,
+        handleJoinRoom: this._joinRoom,
+        handleLeaveRoom: this._leaveRoom,
+        handleExitRoom: this._exitRoom,
+        handleStartGame: this._startGame
       });
     }
 

@@ -80,7 +80,7 @@ class StyledLobby extends Component {
             value={changingPlayerName}
             onChange={this.handlePlayerNameChange}
           />
-          <button onClick={this.handleEnterClick}>Enter</button>
+          <button onClick={this.handleEnterClick}>Login</button>
         </div>
       );
     }
